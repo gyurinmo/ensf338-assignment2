@@ -33,8 +33,6 @@ def main():
     array_element = []
     for i in range(3):
         array_element.append(len(content[i]))
-    
-    print(array_element)
 
     timelog = []
 
@@ -44,7 +42,6 @@ def main():
         func1(content[i], 0, len(content[i])-1)
         end = time.time()
         timelog.append(end-start)
-        print(timelog)
 
     plt.plot(array_element, timelog)
     plt.xlabel("Number of Integers")
